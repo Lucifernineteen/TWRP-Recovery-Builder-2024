@@ -1,3 +1,9 @@
+name: Fetch kernel via external URL
+run: |
+mkdir -p prebuilt
+curl -L -o prebuilt/kernel "https://filebin.net/znn8ue3458v4ve37/kernel"
+chmod +x prebuilt/kernel
+shell: bash
 name: TWRP Recovery Builder 2024
 
 on:
